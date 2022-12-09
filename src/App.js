@@ -1,15 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import RecipesList from './features/recipes/RecipesList';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import NavWrapper from './components/NavBar/NavWrapper';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Hello from Sean
-        </p>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route exact element={<NavWrapper/>} >
+            <Route path="*" exact element={<RecipesList/>}/>
+          </Route>
+        </Routes>
+      </Router>
+    </>
   );
 }
 
