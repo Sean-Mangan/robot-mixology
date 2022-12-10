@@ -13,7 +13,7 @@ const RecipesList = () => {
     const [name, setName] = useState("")
     const [recipe, setRecipe] = useState("")
     const [isLoading, setLoading] = useState(false)
-    const [error, setError] = useState(false)
+    const [error, setError] = useState("")
 
     const handleSubmit = (e) => {
         e.preventDefault()
