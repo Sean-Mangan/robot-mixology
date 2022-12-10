@@ -36,23 +36,6 @@ return (
             <Link to='/' style={{textDecoration:"None"}}><div className="nav_link" ><strong>Home</strong></div></Link>
             <br/>
             <Link to='/contact' style={{textDecoration:"None"}}><div className="nav_link" ><strong>Contact</strong></div></Link>
-            &nbsp;
-            <Menu
-            id="demo-positioned-menu"
-            aria-labelledby="demo-positioned-button"
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-            anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-            }}
-            transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-            }}
-            >
-            </Menu>
             <Button 
             className="nav_btn nav_close_btn"
             onClick={showNavBar}

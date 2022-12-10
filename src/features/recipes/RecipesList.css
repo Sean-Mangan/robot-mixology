@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Cinzel:400,700,900|Lato:100,300,400,700,900|Lobster|Lora:400,700|Mansalva|Muli:200,300,400,600,700,800,900|Open+Sans:300,400,600,700,800|Oswald:200,300,400,500,600,700|Roboto:100,300,400,500,700,900&display=swap');
 
 .recipe-background{
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 82px);
+    min-width: 400px;
     width: 100vw;
     background-color: white;
     text-align: center;
+}
+
+.content-wrapper{
+    max-width: 1000px;
+    min-width: 375px;
+    margin: auto;
+    padding-top: 3em;
 }
 
 .linkage{
@@ -12,14 +21,10 @@
     transition: 0.5s ease-in-out;
 }
 
-.error-msg {
-    max-width: 1000px;
-    margin: auto;
-}
-
 .load-blur{
     width: 100vw;
-    height: calc(70vh - 80px);
+    min-width: 400px;
+    height: calc(70vh - 82px);
     position: absolute;
     z-index: 20;
     text-align: center;
@@ -57,6 +62,55 @@
     justify-content: center;
 }
 
+.recipe-name{
+    text-align: center;
+    font-size: 28px;
+    margin: auto;
+    text-transform:uppercase;
+}
+
+.prompt-text{
+    color: black;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-family: 'Muli', sans-serif;
+    font-weight:200;
+    text-transform:uppercase;
+    font-size:64px;
+    color:#545454;
+    line-height:0.8;
+    margin: 0 1rem;
+    padding-bottom: 0.5em;
+}
+
+.explanation-box{
+    margin-top: 1em;
+    text-align: center;
+    white-space: pre-line;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: fit-content !important;
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    padding: 1em;
+}
+
+.recipe-wrap{
+    margin-top: 1em;
+    text-align: justify;
+    white-space: pre-line;
+    margin-bottom: 2em;
+    max-height: fit-content !important;
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    padding: 1em;
+}
+
+.name-box{
+    min-width: 400px !important;
+    margin-bottom: 1em !important;
+}
 
 .loader {
     box-sizing: border-box;
@@ -72,25 +126,25 @@
     animation: spinx 5s linear infinite;
 }
 .loader:before, .loader:after {
-content: "";
-width: 40px;
-left: 50%;
-height: 35px;
-position: absolute;
-top: 0;
-transform: translatex(-50%);
-background: rgba(255, 255, 255, 0.4);
-border-radius: 0 0 20px 20px;
-background-size: 100% auto;
-background-repeat: no-repeat;
-background-position: 0 0px;
-animation: lqt 5s linear infinite;
+    content: "";
+    width: 40px;
+    left: 50%;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    transform: translatex(-50%);
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 0 0 20px 20px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 0px;
+    animation: lqt 5s linear infinite;
 }
 .loader:after {
-top: auto;
-bottom: 0;
-border-radius: 20px 20px 0 0;
-animation: lqb 5s linear infinite;
+    top: auto;
+    bottom: 0;
+    border-radius: 20px 20px 0 0;
+    animation: lqb 5s linear infinite;
 }
 @keyframes lqt {
 0%, 100% {
