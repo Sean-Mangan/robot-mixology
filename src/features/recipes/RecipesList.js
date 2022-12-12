@@ -20,16 +20,16 @@ const RecipesList = () => {
     const [isLoading, setLoading] = useState(false)
     const [error, setError] = useState("")
     const [snack, setSnack] = React.useState(false);
-    const {drinkName, drinkIndex} = useParams()
+    const {drinkId} = useParams()
 
     useEffect(()=>{
-      if (drinkName && drinkIndex){
+      if (drinkId){
         setLoading(true)
-        setName(drinkName)
-        axios.get(`${URL}/get_drink?name=${drinkName}&index=${drinkIndex}`)
+        axios.get(`${URL}/get_drink/${drinkId}`)
         .then((resp => {
           var newArray = recipes.slice(0, 10);    
-          newArray.unshift({name: name, recipe: resp.data.recipe, shareableLink: resp.data.shareableLink});   
+          newArray.unshift({name: resp.data.prompt, recipe: resp.data.recipe, shareableLink: resp.data.shareableLink});   
+          setName(resp.data.prompt)
           setRecipes(newArray)
         }))
         .catch((err) => {console.log(err); setError((err?.response?.data?.error) ? err?.response?.data?.error : "An unexpected error occured")})

@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route exact element={<NavWrapper/>} >
             <Route path="/contact" exact element={<Contact/>}/>
-            <Route path=":drinkName/:drinkIndex" exact element={<RecipesList/>}/>
+            <Route path=":drinkId" exact element={<RecipesList/>}/>
             <Route path="*" exact element={<RecipesList/>}/>
           </Route>
         </Routes>
