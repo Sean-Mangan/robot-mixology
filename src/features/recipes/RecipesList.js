@@ -132,8 +132,8 @@ const RecipesList = () => {
             return (
               <Paper elevation={12} className='recipe-wrap' key={i}>
                 <div className='card-title-wrap'>
-                  <strong className="recipe-name">{recipe.name}</strong>
                   <Button className="share-btn" startIcon={<SendIcon/>} type="submit" variant="contained" onClick={() => handleClick(recipe.shareableLink)}>Share</Button>
+                  <div className="recipe-name"><strong >{recipe.name}</strong></div>
                   <Snackbar
                     open={snack}
                     autoHideDuration={2000}

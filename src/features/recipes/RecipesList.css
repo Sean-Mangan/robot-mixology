@@ -62,10 +62,10 @@
 }
 
 .recipe-name{
-    text-align: center;
     font-size: 28px;
-    margin: auto;
     text-transform:uppercase;
+    width: calc(100% - 115px);
+    overflow-wrap: break-word;
 }
 
 .card-title-wrap{
