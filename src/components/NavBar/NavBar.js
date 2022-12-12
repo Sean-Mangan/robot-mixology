@@ -25,17 +25,17 @@ function NavBar() {
 return (
     <div className="main_nav_wrapper">
         <div className='nav-wrap'>
-        <div className="logo-holder logo-10">
-        <a href="">
-          <h3><strong>Robot Mixology</strong></h3>
-          <p>&nbsp;</p>
-        </a>
-      </div>
-    </div>
+            <div className="logo-holder logo-10">
+                <a href="">
+                    <h3><strong>Robot Mixology</strong></h3>
+                    <p>&nbsp;</p>
+                </a>
+            </div>
+        </div>
         <nav ref={navRef}>
-            <Link to='/' style={{textDecoration:"None"}}><div className="nav_link" ><strong>Home</strong></div></Link>
+            <Link to='/' onClick={showNavBar} style={{textDecoration:"None"}}><div className="nav_link" ><strong>Home</strong></div></Link>
             <br/>
-            <Link to='/contact' style={{textDecoration:"None"}}><div className="nav_link" ><strong>Contact</strong></div></Link>
+            <Link to='/contact'  onClick={showNavBar} style={{textDecoration:"None"}}><div className="nav_link" ><strong>Contact</strong></div></Link>
             <Button 
             className="nav_btn nav_close_btn"
             onClick={showNavBar}

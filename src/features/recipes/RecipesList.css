@@ -2,7 +2,6 @@
 
 .recipe-background{
     min-height: calc(100vh - 82px);
-    min-width: 400px;
     width: 100vw;
     background-color: white;
     text-align: center;
@@ -10,9 +9,8 @@
 
 .content-wrapper{
     max-width: 1000px;
-    min-width: 375px;
     margin: auto;
-    padding-top: 3em;
+    margin-top: calc(80px + 3em);
 }
 
 .linkage{
@@ -23,9 +21,9 @@
 
 .load-blur{
     width: 100vw;
-    min-width: 400px;
-    height: calc(70vh - 82px);
-    position: absolute;
+    height: calc(100vh - 80px);
+    position: fixed;
+    top: 80px;
     z-index: 20;
     text-align: center;
     align-items: center;
@@ -69,6 +67,15 @@
     text-transform:uppercase;
 }
 
+.card-title-wrap{
+    position: relative;
+}
+
+.share-btn{
+    position: absolute !important;
+    right: 0;
+}
+
 .prompt-text{
     color: black;
     text-decoration: none;
@@ -94,6 +101,8 @@
     font-family: 'Muli', sans-serif;
     font-size: 18px;
     padding: 1em;
+    max-width: 600px;
+    background-color: white;
 }
 
 .recipe-wrap{
@@ -108,7 +117,7 @@
 }
 
 .name-box{
-    min-width: 400px !important;
+    min-width: min(400px, 100vw) !important;
     margin-bottom: 1em !important;
 }
 
@@ -183,6 +192,12 @@
     transform: rotate(360deg);
     background-position: 50% 36px;
 }
+}
+
+@media only screen and (max-width: 800px){
+    .prompt-text{
+        font-size: 48px;
+    }
 }
       
      

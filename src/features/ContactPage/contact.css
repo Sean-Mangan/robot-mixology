@@ -1,0 +1,59 @@
+.contact_wrapper{
+    max-width: 60%;
+    margin: auto;
+    margin-top: 82px;
+    text-align: center;
+}
+
+.contact_text {
+    font-size: 20px;
+    text-align: left;
+}
+
+.desc_stuff{
+    padding: 0 2em 2em 2em;
+}
+
+.contact_image{
+    border-radius: 10px;
+    max-width: 90%;
+    margin-top: 2em;
+}
+
+.linker{
+    text-decoration: none;
+    color: rgb(32, 184, 184);
+}
+
+.contact_title {
+    padding-top: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+}
+
+.contact_center{
+    text-align: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px){
+    .contact_wrapper{
+        max-width: 95%;
+        padding-top: 2em;
+    }
+    .contact_title{
+        padding-top: 0;
+    }
+    .contact_image{
+        max-width: 95%
+    }
+    .contact_title{
+        display: none;
+    }
+    .contact_text{
+        text-align: center;
+    }
+}
