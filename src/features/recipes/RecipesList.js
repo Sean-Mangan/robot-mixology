@@ -82,7 +82,7 @@ const RecipesList = () => {
             {explanation}
             <br/>
             <br/>
-            <strong>We cannot gaurantee that all generated drinks are safe for human consumption.</strong>
+            <strong>We cannot guarantee that all generated drinks are safe for human consumption.</strong>
           </div>
           <Button type="submit" variant="contained" sx={{backgroundColor: "cyan", color:"rgb(61, 61, 61);"}}>Click Here to Get Started!</Button>
           </div>
